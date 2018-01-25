@@ -1,17 +1,17 @@
 # Data Science do Zero
 
-Este repositorio contem meus estudos dos exemplos do livro Data Science do Zero da editora Alta Books. Todos os exemplos são construidos utilizando python 3, e com correções para as atualizações do matplot ou erros encontrados durante o estudo do livro.
+Este repositorio contem meus estudos dos exemplos do livro **Data Science do Zero** da editora **Alta Books**. Todos os exemplos são construidos utilizando python 3, e com correções para as atualizações do matplot ou erros encontrados durante o estudo do livro.
 
-Para execultar os exemplos basta em um terminal, prompt de comando ou power shell escrever o comando:
+Para execultar os exemplos basta em um Terminal, Prompt de Comando ou _PowerShell_ escrever o comando:
 
-*Unix/Linux/MacOS*
+**Unix/Linux/MacOS**
 ```bash
 $ python3 arquivo_exemplo.py
 ```
 
 ou
 
-*Windows*
+**Windows**
 ```posh
 PS > python3.exe arquivo_exemplo.py
 ```
@@ -22,11 +22,11 @@ Onde `arquivo_exemplo` deve ser trocado pelo nome do exemplo a ser executado.
 
 Para execultar estes exemplos é necessário antes instalar as seguintes bibliotecas do python3:
 
-. matplotlib
+- matplotlib
 
-É possível instalar estas bibliotecas utilizando o `pip` ou `conda` caso tenha a distribuição **Anaconda** instalado. Um exemplo pode ser visto a seguir
+É possível instalar estas bibliotecas utilizando o `pip` ou `conda` caso tenha a distribuição _Anaconda_ instalado. Um exemplo pode ser visto a seguir:
 
-Unix/Linux/MacOS
+**Unix/Linux/MacOS**
 ```bash
 $ pip3 install matplotlib
 ```
@@ -41,32 +41,34 @@ No Linux é provavel que seja necessário utilizar o comando sudo caso não este
 
 No Linux é provavel que seja ainda necessário instalar a biblioteca tk para python 3.
 
-No Ubuntu:
+**Ubuntu**
 ```Shell
 $ sudo apt install python3-tk
 ```
 
-Fedora:
+**Fedora**
 ```Shell
 $ sudo dnf install python3-tk
 ```
 
 Em outras distribuição procure por este nome de pacote que deve ser encontrado.
 
-Para instalar as bibliotecas necessárias no Windows, pode-se usar o mesmo comando, caso tenha apenas o python 3 instalado utilize apenas `pip` ao invés de `pip3`, o mesmo caso esteja utilizando um ambiente virtual python. No caso do anaconda o comando não se altera e pode ser digitado tanto no ambiente padrão como em um ambiente virtual criado pelo conda.
+Para instalar as bibliotecas necessárias no Windows, pode-se usar o mesmo comando, caso tenha apenas o python 3 instalado utilize apenas `pip` ao invés de `pip3`, o mesmo caso esteja utilizando um ambiente virtual python. No caso do **Anaconda** o comando não se altera e pode ser digitado tanto no ambiente padrão como em um ambiente virtual criado pelo _conda_.
 
 ## Instalação Python 3
 
 Caso seu sistema operacional não possua o python 3, é possível instalar baixando os instalador, pacote de distribuição ou código fonte para se compilar do [site oficial do Python](https://www.python.org), lembre-se de pegar a versão para python 3 respectiva a arquitetura do seu sistema operaciona, que pode ser X86, X64 entre outras.
 
+A instalação do Windows é simples, pois a equipe do python provem um instalador para o sistema da Microsoft. É aconselhado que se inclua na hora da instalação a opção por permitir adicionar o python ao _path_ do sistema operacional, assim basta digitar o nome `python` ou `python.exe` em qualquer lugar no Prompt ou PowerShell que ele reconhecerá o programa.
+
 A maioria das distribuições Linux/Unix já vem com python 3, mas caso não haja, basta pesquisar como instalar pelo sistema de pacotes da distribuição caso exista um. Caso contrario será necessário compilar do código fonte.
 
 Para instalar no MacOS, pode-se utilizar o sistema de pacotes `brew`:
 
-*MacOS*
+**MacOS**
 ```bash
 $ brew install python3
 $ brew link python3
 ```
 
-Caso não possua o `brew` instalado, basta entrar no [site oficial do Homebrew](https://brew.sh) e seguir os passos da instalação. É muito útil para qualquer desenvolvedor que utilize MacOS ter o `brew` como sistema de instalação de pacotes. 
+Caso não possua o `brew` instalado, basta entrar no [site oficial do Homebrew](https://brew.sh) e seguir os passos da instalação. É útil para qualquer desenvolvedor que utilize MacOS ter o `brew` como sistema de instalação de pacotes.
