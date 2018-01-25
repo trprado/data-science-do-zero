@@ -37,6 +37,12 @@ ou
 $ conda install matplotlib
 ```
 
+Também é possível utilizar o arquivo `requirments.txt` para instalar qualquer requerimento necessário, cada pasta do capitulo que necessite de um requerimento conterá este arquivo, basta executar o comando para instalar os requerimentos:
+
+```Shell
+$ pip install -r requeriments.txt
+```
+
 No Linux é provavel que seja necessário utilizar o comando sudo caso não esteja utilizando um ambiente virtual. Em caso de estar utilizando um ambiente virtual configurado para python 3, pode-se utilizar o comando `pip` direto ao invez de `pip3`, este ultimo é usado em sistemas que possui as duas versões do python instalados.
 
 No Linux é provavel que seja ainda necessário instalar a biblioteca tk para python 3.
