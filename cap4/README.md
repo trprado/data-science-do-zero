@@ -18,5 +18,5 @@ from vec_tools import vec_sum, vec_dot, ...
 from caminho.vec_tools import vec_sum, vec_dot, ...
 ```
 
-> Lembrando: Este é a junção dos exemplos encontrados no livro **Data Science do Zero** da editora **Alta Books**. **É** apenas um exemplo e não deve ser usado em um projeto, apenas como estudo para compreender o que acontece com os vetores quando trabalhados.
+> Lembrando: Este é a junção dos exemplos encontrados no livro **Data Science do Zero** da editora **Alta Books**. **É** apenas um exemplo e não deve ser usado em um projeto, apenas entender os funcionamentos internos esperados em um vetor.
 
