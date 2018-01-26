@@ -12,7 +12,7 @@ for label, friend_count, minute_count in zip(labels, friends, minutes):
     plt.annotate(label,
                 xy=(friend_count, minute_count),# coloca o rótulo com sua
                 xytext=(5, -5),                 # posição e compensa os valores
-                                                # x, u da posição do texto.
+                                                # x da posição do texto.
                 textcoords='offset points')
 
 # correção de eixos para ficar igual exemplo do livro.
