@@ -70,7 +70,7 @@ def vec_sum(v: List[int]) -> int:
         6
     
     Args:
-        v: List[int]: Lista de vetores para soma.
+        v (List[int]): Lista de vetores para soma.
     Return:
         int: Resultado da soma dos vetores contidos na lista.
     """
@@ -88,8 +88,8 @@ def vec_smult(s: int, v: List[int]) -> List[int]:
         [2, 4, 6]
     
     Args:
-        s: int: Escalar (scale) de multiplicação.
-        v: List[int]: Lista de vetores para multiplicação.
+        s (int): Escalar (scale) de multiplicação.
+        v (List[int]): Lista de vetores para multiplicação.
     Return:
         int: Lista de vetores multiplicados pelo escalar.
     """
@@ -109,7 +109,7 @@ def vec_mean(v: List[int]) -> float:
         2.0
     
     Args:
-        v: List[int]: Lista de vetores a ser calculada a média.
+        v (List[int]): Lista de vetores a ser calculada a média.
     Return:
         float: Média da lista de vetores.
     """
@@ -129,8 +129,8 @@ def vec_dot(v: List[int], w: List[int]) -> int:
         10
     
     Args:
-        v: List[int]: Primeira lista de vetor para cálculo do escalar.
-        w: List[int]: Segunda lista de vetor para cálculo do escalar.
+        v (List[int]): Primeira lista de vetor para cálculo do escalar.
+        w (List[int]): Segunda lista de vetor para cálculo do escalar.
     Return:
         int: Produto escalar dos dois vetores passados no argumento.
     """
@@ -147,7 +147,7 @@ def vec_sum_squares(v: List[int]) -> int:
         14
     
     Args:
-        v: List[int]: Lista de vetor.
+        v (List[int]): Lista de vetor.
     Return:
         int: Soma dos quadrados do vetor.
     """
@@ -164,7 +164,7 @@ def vec_magnitude(v: List[int]) -> float:
         3.7416573867739413
 
     Args:
-        v: List[int]: Lista de vetores para se calcular a magnitude.
+        v (List[int]): Lista de vetores para se calcular a magnitude.
     Return:
         float: Retorna o comprimento do vetor.
     """
@@ -183,8 +183,8 @@ def vec_distance(v: List[int],w: List[int]) -> float:
         2.8284271247461903
     
     Args:
-        v: List[int]: Primeira lista de vetores.
-        w: List[int]: Segunda lista de vetores.
+        v (List[int]): Primeira lista de vetores.
+        w (List[int]): Segunda lista de vetores.
     Return:
         float: Distancia entre os dois vetores passados por argumento.
     """
