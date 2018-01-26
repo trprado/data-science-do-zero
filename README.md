@@ -1,11 +1,11 @@
 # Data Science do Zero
 
-Este repositorio contem meus estudos dos exemplos do livro **Data Science do Zero** da editora **Alta Books**. Todos os exemplos são construidos utilizando python 3, e com correções para as atualizações do matplot ou erros encontrados durante o estudo do livro.
+Este repositório contém meus estudos dos exemplos do livro **Data Science do Zero** da editora **Alta Books**. Todos os exemplos são construídos utilizando python 3, e com correções para as atualizações do matplot ou erros encontrados durante o estudo do livro.
 
-Para execultar os exemplos basta em um Terminal, Prompt de Comando ou _PowerShell_ escrever o comando:
+Para executar os exemplos basta em um Terminal, Prompt de Comando ou _PowerShell_ escrever o comando:
 
 **Unix/Linux/MacOS**
-```bash
+```Shell
 $ python3 arquivo_exemplo.py
 ```
 
@@ -20,32 +20,32 @@ Onde `arquivo_exemplo` deve ser trocado pelo nome do exemplo a ser executado.
 
 ## Requerimentos
 
-Para execultar estes exemplos é necessário antes instalar as seguintes bibliotecas do python3:
+Para executar estes exemplos é necessário antes instalar as seguintes bibliotecas do python3:
 
 - matplotlib
 
-É possível instalar estas bibliotecas utilizando o `pip` ou `conda` caso tenha a distribuição _Anaconda_ instalado. Um exemplo pode ser visto a seguir:
+É possível instalar estas bibliotecas utilizando o `pip` ou `conda` caso tenha a distribuição **Anaconda** instalado. Um exemplo pode ser visto a seguir:
 
 **Unix/Linux/MacOS**
-```bash
+```Shell
 $ pip3 install matplotlib
 ```
 
 ou
 
-```bash
+```Shell
 $ conda install matplotlib
 ```
 
-Também é possível utilizar o arquivo `requirments.txt` para instalar qualquer requerimento necessário, cada pasta do capitulo que necessite de um requerimento conterá este arquivo, basta executar o comando para instalar os requerimentos:
+Também é possível utilizar o arquivo `requirments.txt` para instalar qualquer requerimento necessário, cada pasta do capítulo que necessite de um requerimento conterá este arquivo, basta executar o comando para instalar os requerimentos:
 
 ```Shell
 $ pip install -r requeriments.txt
 ```
 
-No Linux é provavel que seja necessário utilizar o comando sudo caso não esteja utilizando um ambiente virtual. Em caso de estar utilizando um ambiente virtual configurado para python 3, pode-se utilizar o comando `pip` direto ao invez de `pip3`, este ultimo é usado em sistemas que possui as duas versões do python instalados.
+No Linux é provável que seja necessário utilizar o comando sudo caso não esteja utilizando um ambiente virtual. Em caso de estar utilizando um ambiente virtual configurado para python 3, pode-se utilizar o comando `pip` direto ao invés de `pip3`, este último é usado em sistemas que possui as duas versões do python instalados.
 
-No Linux é provavel que seja ainda necessário instalar a biblioteca tk para python 3.
+No Linux é provável que seja ainda necessário instalar a biblioteca `tk` para python 3.
 
 **Ubuntu**
 ```Shell
@@ -67,14 +67,4 @@ Caso seu sistema operacional não possua o python 3, é possível instalar baixa
 
 A instalação do Windows é simples, pois a equipe do python provem um instalador para o sistema da Microsoft. É aconselhado que se inclua na hora da instalação a opção por permitir adicionar o python ao _path_ do sistema operacional, assim basta digitar o nome `python` ou `python.exe` em qualquer lugar no Prompt ou PowerShell que ele reconhecerá o programa.
 
-A maioria das distribuições Linux/Unix já vem com python 3, mas caso não haja, basta pesquisar como instalar pelo sistema de pacotes da distribuição caso exista um. Caso contrario será necessário compilar do código fonte.
-
-Para instalar no MacOS, pode-se utilizar o sistema de pacotes `brew`:
-
-**MacOS**
-```bash
-$ brew install python3
-$ brew link python3
-```
-
-Caso não possua o `brew` instalado, basta entrar no [site oficial do Homebrew](https://brew.sh) e seguir os passos da instalação. É útil para qualquer desenvolvedor que utilize MacOS ter o `brew` como sistema de instalação de pacotes.
+A maioria das distribuições Linux/U
