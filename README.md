@@ -67,4 +67,14 @@ Caso seu sistema operacional não possua o python 3, é possível instalar baixa
 
 A instalação do Windows é simples, pois a equipe do python provem um instalador para o sistema da Microsoft. É aconselhado que se inclua na hora da instalação a opção por permitir adicionar o python ao _path_ do sistema operacional, assim basta digitar o nome `python` ou `python.exe` em qualquer lugar no Prompt ou PowerShell que ele reconhecerá o programa.
 
-A maioria das distribuições Linux/U
+A maioria das distribuições Linux/Unix já vem com python 3, mas caso não haja, basta pesquisar como instalar pelo sistema de pacotes da distribuição caso exista um. Caso contrario será necessário compilar do código fonte.
+
+Para instalar no MacOS, pode-se utilizar o sistema de pacotes `brew`:
+
+**MacOS**
+```Shell
+$ brew install python3
+$ brew link python3
+```
+
+Caso não possua o `brew` instalado, basta entrar no [site oficial do Homebrew](https://brew.sh) e seguir os passos da instalação. É útil para qualquer desenvolvedor que utilize MacOS ter o `brew` como sistema de instalação de pacotes.
