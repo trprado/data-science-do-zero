@@ -9,8 +9,8 @@ do python que não são as melhores alternativas em performance. O melhor seria
 utilizar numpy para trabalhar com vetores.
 
 Exemplo:
-    >>> from vec_tool import vec_sum
-    >>> vec_sum([1, 2, 3])
+    from vec_tool import vec_sum
+    vec_sum([1, 2, 3])
     6
 """
 
@@ -22,6 +22,10 @@ def vec_add(v: List[int], w: List[int]) -> List[int]:
 
     Adição entre dois vetores. Utilização de `zip` e compreensão de listas para 
     adicionar os elementos de cada vetor e criar um novo vetor das somas.
+
+    Docstest:
+        >>> vec_add([1, 2, 3], [3, 2, 1])
+        [4, 4, 4]
     
     Args:
         v (List[int]): Primeiro vetor a ser somado.
@@ -38,6 +42,10 @@ def vec_sub(v: List[int], w: List[int]) -> List[int]:
     Subtração entre dois vetores. Utilização de `zip` e compreensão de listas 
     para subtrair os elementos de cada vetor e criar um novo vetor das 
     subtrações.
+
+    Doctest:
+        >>> vec_sub([1, 2, 3], [3, 2, 1])
+        [-2, 0, 2]
     
     Args:
         v (List[int]): Primeiro vetor a ser subtração.
@@ -46,7 +54,7 @@ def vec_sub(v: List[int], w: List[int]) -> List[int]:
     Return:
         List[int]: Novo vetor subtraído.
     """
-    return [v_i + v_w for v_i, v_w in zip(v, w)]
+    return [v_i - v_w for v_i, v_w in zip(v, w)]
 
 def vec_sum(v: List[int]) -> int:
     """Soma uma lista de vetores.
@@ -56,6 +64,10 @@ def vec_sum(v: List[int]) -> int:
     lista e retorna o resultado ao final.
 
     Para melhorar utilizei função built-in (sum) do próprio python.
+
+    Doctest:
+        >>> vec_sum([1, 2, 3])
+        6
     
     Args:
         v: List[int]: Lista de vetores para soma.
@@ -70,6 +82,10 @@ def vec_smult(s: int, v: List[int]) -> List[int]:
     """Multiplicação de escalar por uma lista de vetores.
 
     Cada vetor da lista é multiplicado pelo escalar passado.
+
+    Doctest:
+        >>> vec_smult(2, [1, 2, 3])
+        [2, 4, 6]
     
     Args:
         s: int: Escalar (scale) de multiplicação.
@@ -87,6 +103,10 @@ def vec_mean(v: List[int]) -> float:
 
     Nesta função preferi fazer a chamada da função sum do que utilizar vec_sum()
     e realizar um calculo direto a ter de usar a função de multiplicação.
+
+    Doctest:
+        >>> vec_mean([1, 2, 3])
+        2.0
     
     Args:
         v: List[int]: Lista de vetores a ser calculada a média.
@@ -103,6 +123,10 @@ def vec_dot(v: List[int], w: List[int]) -> int:
     Este exemplo já se encontra bem simplificado, apenas alterei em primeiro 
     gerar. Multiplica-se cada elemento de ambos os vetores depois somam a lista 
     gerada realizando uma única chamada a `sum()`.
+
+    Docstring:
+        >>> vec_dot([1, 2, 3], [3, 2, 1])
+        10
     
     Args:
         v: List[int]: Primeira lista de vetor para cálculo do escalar.
@@ -117,6 +141,10 @@ def vec_sum_squares(v: List[int]) -> int:
     """Comnputar a soma dos quadrados de uma lista de vetores.
 
     Utiliza-se da função `vec_dot()` para calcular a soma dos quadrados de um vetor.
+
+    Docstring:
+        >>> vec_sum_squares([1, 2, 3])
+        14
     
     Args:
         v: List[int]: Lista de vetor.
@@ -130,6 +158,10 @@ def vec_magnitude(v: List[int]) -> float:
     
     Calcula o tamanho do comprimento de um vetor. A magnitude é dada pela 
     fórmula ||v|| = raiz(x1²+x2²+...+xi²).
+
+    Docstring:
+        >>> vec_magnitude([1, 2, 3])
+        3.7416573867739413
 
     Args:
         v: List[int]: Lista de vetores para se calcular a magnitude.
@@ -145,6 +177,10 @@ def vec_distance(v: List[int],w: List[int]) -> float:
     na distância entre os dois vetores passados por argumento.
 
     (v_1 - w_1) ** 2 + ... + (v_n - w_n) ** 2
+
+    Docstring:
+        >>> vec_distance([1, 2, 3], [3, 2, 1])
+        2.8284271247461903
     
     Args:
         v: List[int]: Primeira lista de vetores.
@@ -153,3 +189,8 @@ def vec_distance(v: List[int],w: List[int]) -> float:
         float: Distancia entre os dois vetores passados por argumento.
     """
     return vec_magnitude(vec_sub(v, w))
+
+# inicia doctest quando execultado como python vec_tools.py.
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(verbose=True) # mostra os resultados em uma forma verbosa.
