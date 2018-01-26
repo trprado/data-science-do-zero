@@ -44,18 +44,18 @@ def vec_sub(v: List[int], w: List[int]) -> List[int]:
         w (List[int]): Segundo vetor a ser subtração.
     
     Return:
-        List[int]: Novo vetor subtraido.
+        List[int]: Novo vetor subtraído.
     """
     return [v_i + v_w for v_i, v_w in zip(v, w)]
 
 def vec_sum(v: List[int]) -> int:
     """Soma uma lista de vetores.
 
-    Utilizando-se de reduce para simplificar a função, temos a soma de cada 
-    elemento. Atravez de uma função passada como argumento, reduce computa uma 
+    Utilizando-se de `reduce()` para simplificar a função, temos a soma de cada 
+    elemento. Através de uma função passada como argumento, `reduce()` computa uma 
     lista e retorna o resultado ao final.
 
-    Para melhorar utilizei função built-in (sum) do proprio python.
+    Para melhorar utilizei função built-in (sum) do próprio python.
     
     Args:
         v: List[int]: Lista de vetores para soma.
@@ -63,7 +63,7 @@ def vec_sum(v: List[int]) -> int:
         int: Resultado da soma dos vetores contidos na lista.
     """
     # return reduce(vec_add, v)
-    return sum(v)   # Simplifica a soma utilizando funções já construidas do 
+    return sum(v)   # Simplifica a soma utilizando funções já construídas do 
                     # python.
 
 def vec_smult(s: int, v: List[int]) -> List[int]:
@@ -75,7 +75,7 @@ def vec_smult(s: int, v: List[int]) -> List[int]:
         s: int: Escalar (scale) de multiplicação.
         v: List[int]: Lista de vetores para multiplicação.
     Return:
-        int: Lista de vetores multiplicadas pelo escalar.
+        int: Lista de vetores multiplicados pelo escalar.
     """
     return [s * v_i for v_i in v]
 
@@ -101,12 +101,12 @@ def vec_dot(v: List[int], w: List[int]) -> int:
     """Produto escalar entre dois vetores.
 
     Este exemplo já se encontra bem simplificado, apenas alterei em primeiro 
-    gerar. Multiplica-se cada elemento de ambos os vetores depois soma a lista 
+    gerar. Multiplica-se cada elemento de ambos os vetores depois somam a lista 
     gerada realizando uma única chamada a `sum()`.
     
     Args:
-        v: List[int]: Primeira lista de vetor para calculo do escalar.
-        w: List[int]: Segundo lista de vetor para calculo do escalar.
+        v: List[int]: Primeira lista de vetor para cálculo do escalar.
+        w: List[int]: Segunda lista de vetor para cálculo do escalar.
     Return:
         int: Produto escalar dos dois vetores passados no argumento.
     """
@@ -116,7 +116,7 @@ def vec_dot(v: List[int], w: List[int]) -> int:
 def vec_sum_squares(v: List[int]) -> int:
     """Comnputar a soma dos quadrados de uma lista de vetores.
 
-    Utiliza-se da função vec_dot para calcular a soma dos quadrados de um vetor.
+    Utiliza-se da função `vec_dot()` para calcular a soma dos quadrados de um vetor.
     
     Args:
         v: List[int]: Lista de vetor.
@@ -139,10 +139,10 @@ def vec_magnitude(v: List[int]) -> float:
     return sqrt(vec_sum_squares(v))
 
 def vec_distance(v: List[int],w: List[int]) -> float:
-    """Computar a distancia entre dois vetores.
+    """Computar a distância entre dois vetores.
 
-    Esta função subtrai os vetores antes de calcular seu comprimeiro, resultando
-    na distancia entre os dois vetores passados por argumento.
+    Esta função subtrai os vetores antes de calcular seu comprimento, resultando
+    na distância entre os dois vetores passados por argumento.
 
     (v_1 - w_1) ** 2 + ... + (v_n - w_n) ** 2
     
