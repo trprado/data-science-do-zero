@@ -78,3 +78,10 @@ $ brew link python3
 ```
 
 Caso não possua o `brew` instalado, basta entrar no [site oficial do Homebrew](https://brew.sh) e seguir os passos da instalação. É útil para qualquer desenvolvedor que utilize MacOS ter o `brew` como sistema de instalação de pacotes.
+
+
+## TODO
+- [x] Criar e corrigir códigos capítulo 3;
+- [] Criar e corrigir códigos caítulo 4.
+
+Demais capítulos adicionados conforme estudo o livro.
